@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+	<link name="velodyne" />
+	<joint name="velodyne_joint" type="fixed" >
+		<parent link="mid_mount" />
+		<child link="velodyne" />
+	<origin xyz="0 0 5" rpy="0 0 0" />		//Numbers are SI (m) rpy- roll pitch yaw
+	</joint> 
+</robot>
